@@ -15,16 +15,13 @@ public class CustomListTest {
     @Before
     public void createList() {
         list = new CustomList(null, new ArrayList<City>());
-        list.addCity(new City("Calgary", "AB"));
     }
 
     @Test
     public void addCityTest() {
         int listSize = list.getCount();
-        list.addCity(new City("Edmonton", "Alberta"));
-        // check that the new size of the list is the initial size + 1
+        list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(), listSize + 1);
-        // adding another line
     }
 
 
