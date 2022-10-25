@@ -23,6 +23,7 @@ public class CustomListTest {
         customList.addCity(new City("Edmonton", "Alberta"));
         // check that the new size of the list is the initial size + 1
         assertEquals(customList.getCount(), listSize + 1);
+        // adding another line
     }
 
 
